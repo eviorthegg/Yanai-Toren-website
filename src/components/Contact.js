@@ -32,7 +32,7 @@ function Contact() {
   return (
     <div className={styles.contactContainer}>
         <Helmet>
-        <title>Contact Us - ORI AMITAI PRODUCTION</title>
+        <title>Contact Us - Yanai Toren Production's</title>
         <meta name="description" content="Get in touch with ORI AMITAI PRODUCTION." />
       </Helmet>
       <h2 className={styles.title}>Contact Us</h2>

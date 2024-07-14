@@ -7,7 +7,7 @@ function About() {
   return (
     <div className={styles.aboutContainer}>
       <Helmet>
-        <title>About Us - ORI AMITAI PRODUCTION</title>
+        <title>About Us - Yanai Toren Production's</title>
         <meta name="description" content="Learn more about ORI AMITAI PRODUCTION and our vision." />
       </Helmet>
 

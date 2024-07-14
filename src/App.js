@@ -112,7 +112,7 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-        <title>ORI AMITAI PRODUCTION - Home</title>
+        <title>Yanai Toren Production's - Home</title>
         <meta name="description" content="Welcome to ORI AMITAI PRODUCTION. Based in Tel Aviv, we create music videos for artists and content for global brands." />
       </Helmet>
       <header className={styles.heroSection}>
@@ -121,7 +121,7 @@ function App() {
           Your browser does not support the video tag.
         </video>
         <div className={styles.videoOverlay}>
-          <h1>ORI AMITAI PRODUCTION</h1>
+          <h1>Yanai Toren Productions</h1>
           <hr className={styles.heroLine} />
           <p>Based in Tel Aviv, we are Creating Music Videos for artists and Content for Global brands.</p>
           <p>We bring the collective years of our experience and strategies to every project.</p>
