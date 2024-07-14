@@ -1,0 +1,259 @@
+.heroSection {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+
+  }
+  
+  .heroVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    
+  }
+  
+  .videoOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .videoOverlay p {
+    margin: 0;
+  }
+  
+  .contactButton {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #dee4f0;
+    color: rgb(37, 35, 35);
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .arrowDown {
+    margin-top: 200px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+  }
+  
+  /* Add padding to the main content to ensure it starts after the hero section */
+
+  
+
+/* Add these styles to your HomePage.module.css */
+.videoPlaceholder {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .videoThumbnail {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .playButtonContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .playButton {
+    width: 68px;
+    height: 48px;
+    background: url('https://img.icons8.com/ios-filled/50/000000/play-button-circled--v1.png') no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+  }
+  
+  .videoContainer {
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+
+  .productionSection {
+    background-color: #f8f9fa;
+    height: 100%;
+    padding: 150px;
+  }
+  
+  .productionSection h2 {
+    position: relative;
+  }
+  
+  .slider {
+    margin: 0 auto;
+  }
+  
+  .videoContainer {
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .videoContainer:hover {
+    transform: scale(1.05);
+  }
+  
+  .slick-prev, .slick-next {
+    z-index: 1;
+  }
+  
+  .slick-dots li button:before {
+    color: #007bff;
+  }
+  
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slick-list {
+    padding: 20px;
+  }
+  
+  .videoGallery video {
+    max-width: 100%;
+  }
+  
+  .videoGallery::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .videoGallery::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 10px;
+  }
+  
+  /* New CSS for the line under the h1 */
+  .heroLine {
+    width: 30%;
+    height: 3px;
+    background-color: #e9eef5;
+    margin: 10px 0;
+    border: none;
+  }
+  
+  .servicesSection {
+    background-color: #f8f9fa;
+    padding: 150px;
+    text-align: center;
+  }
+  
+  .servicesSection h2 {
+    margin-bottom: 30px;
+  }
+  
+  .serviceCarousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .serviceContainer {
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .serviceContainer:hover {
+    transform: scale(1.05);
+  }
+  
+  .serviceImage {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .serviceName {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  
+  /* Existing CSS */
+  .App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .servicesSection,
+    .productionSection {
+      padding: 50px;
+    }
+  }

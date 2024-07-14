@@ -1,0 +1,50 @@
+.aboutContainer {
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .producerSection {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .producerImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .producerName {
+    font-size: 24px;
+    color: #555;
+  }
+  
+  .contentSection {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    color: #666;
+  }
+  
+  .contentSection h4 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .contentSection p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+  
