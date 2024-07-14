@@ -1,73 +1,16 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
-
 import { Link } from 'react-router-dom';
-import styles from './HomePage.module.css';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import styles from './HomePage.module.css';
 
 import productionImage from './content/pictures/download.png';
 import commercialsImage from './content/pictures/download (1).png';
 import musicVideosImage from './content/pictures/download (2).png';
 import liveShowsImage from './content/pictures/download (3).png';
-
-const YouTubePlaceholder = ({ videoId }) => {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const placeholderRef = useRef(null);
-
-  const loadVideo = () => {
-    setIsLoaded(true);
-  };
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          loadVideo();
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.25 }
-    );
-
-    if (placeholderRef.current) {
-      observer.observe(placeholderRef.current);
-    }
-
-    return () => {
-      if (placeholderRef.current) {
-        observer.unobserve(placeholderRef.current);
-      }
-    };
-  }, []);
-
-  return (
-    <div className={styles.videoContainer} ref={placeholderRef} onClick={loadVideo}>
-      {isLoaded ? (
-        <iframe
-          width="100%"
-          height="300"
-          src={`https://www.youtube.com/embed/${videoId}`}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      ) : (
-        <div className={styles.videoPlaceholder}>
-          <img
-            src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-            alt="Video Placeholder"
-            className={styles.videoThumbnail}
-          />
-          <div className={styles.playButtonContainer}>
-            <div className={styles.playButton}></div>
-          </div>
-        </div>
-      )}
-    </div>
-  );
-};
+import YouTubePlaceholder from './YouTubePlaceholder';
 
 function App() {
   const settings = {
@@ -120,6 +63,7 @@ function App() {
           <source src='https://d3csxsarc47q4y.cloudfront.net/Untitled%20video%20-%20Made%20with%20Clipchamp.mp4' type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+        <img src={musicVideosImage} alt='Hero' className={styles.heroImage} />
         <div className={styles.videoOverlay}>
           <h1>Yanai Toren Productions</h1>
           <hr className={styles.heroLine} />

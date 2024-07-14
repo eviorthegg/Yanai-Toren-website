@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from './Contact.module.css';
-import qs from 'qs';
 import { Helmet } from 'react-helmet';
 
 function Contact() {
