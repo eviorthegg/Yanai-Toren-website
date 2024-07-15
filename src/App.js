@@ -57,7 +57,7 @@ function App() {
       </Helmet>
       <header className={styles.heroSection}>
         <video autoPlay loop muted playsInline className={styles.heroVideo}>
-          <source src={`${srcs3}/Untitled%20video%20-%20Made%20with%20Clipchamp.mp4`} type="video/mp4" />
+          <source src={`${srcs3}/HeroVideo.mp4`} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className={styles.videoOverlay}>
