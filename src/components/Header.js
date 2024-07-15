@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Header.module.css'; // Import the CSS module
+import styles from './Header.module.css';
+import logo from '../content/pictures/Y.png'; // Adjust the path as necessary
 
 function Header() {
   return (
     <header className={styles.header}>
+      <div className={styles.logoContainer}>
+        <img src={logo} alt="Logo" className={styles.logo} />
+      </div>
       <nav>
         <ul className={styles.navList}>
           <li className={styles.navItem}><Link className={styles.navLink} to="/">Home</Link></li>

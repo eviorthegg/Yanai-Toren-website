@@ -260,25 +260,11 @@
     }
   }
   
-  .heroImage {
-    display: none;
-    width: auto;
-    margin-left: -400px;
-    height: 90vh;
-  }
-  
 
   @media (max-width: 600px) {
     .servicesSection,
     .productionSection {
       padding: 50px;
-    }
-    .heroVideo {
-      display: none;
-    }
-  
-    .heroImage {
-      display: block;
     }
   }
 

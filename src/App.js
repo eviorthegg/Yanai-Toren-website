@@ -9,7 +9,7 @@ import YouTubePlaceholder from './YouTubePlaceholder';
 
 function App() {
   const srcs3 = 'https://d3csxsarc47q4y.cloudfront.net';
-  
+
   const settings = {
     dots: true,
     infinite: true,
@@ -56,11 +56,10 @@ function App() {
         <meta name="description" content="Welcome to ORI AMITAI PRODUCTION. Based in Tel Aviv, we create music videos for artists and content for global brands." />
       </Helmet>
       <header className={styles.heroSection}>
-        <video autoPlay loop muted className={styles.heroVideo}>
+        <video autoPlay loop muted playsInline className={styles.heroVideo}>
           <source src={`${srcs3}/Untitled%20video%20-%20Made%20with%20Clipchamp.mp4`} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <img src={`${srcs3}/pictures/download%20(2).png`} alt='Hero' className={styles.heroImage} />
         <div className={styles.videoOverlay}>
           <h1>Yanai Toren Productions</h1>
           <hr className={styles.heroLine} />
