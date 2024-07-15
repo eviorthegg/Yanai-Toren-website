@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './About.module.css';
-import producerImage from '../content/pictures/yani.jpg'; // Import the producer's image
 import { Helmet } from 'react-helmet';
 
 function About() {
@@ -13,7 +12,7 @@ function About() {
 
       <h2 className={styles.title}>About Us</h2>
       <div className={styles.producerSection}>
-        <img src={producerImage} alt="Producer" className={styles.producerImage} />
+        <img src="https://d3csxsarc47q4y.cloudfront.net/pictures/yani.jpg" alt="Producer" className={styles.producerImage} />
         <h3 className={styles.producerName}>Yanai Toren Salami</h3>
       </div>
       <div className={styles.contentSection}>

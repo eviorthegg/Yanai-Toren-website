@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
-import logo from '../content/pictures/Y.png'; // Adjust the path as necessary
 
 function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.logoContainer}>
-        <img src={logo} alt="Logo" className={styles.logo} />
+        <img src="https://d3csxsarc47q4y.cloudfront.net/pictures/Y.png" alt="Logo" className={styles.logo} />
       </div>
       <nav>
         <ul className={styles.navList}>
