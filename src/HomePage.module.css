@@ -58,7 +58,11 @@
   /* Add padding to the main content to ensure it starts after the hero section */
 
   
+.MainCointer{
+  height: 100%;
+  background-color: #f1f1f1;
 
+}
 /* Add these styles to your HomePage.module.css */
 .videoPlaceholder {
     position: relative;
@@ -99,8 +103,8 @@
   }
   
   .productionSection h2 {
-    text-align: center;
-    margin: 0 auto;
+      text-align: center;
+      margin: 0 auto;
     position: relative;
   }
   
@@ -198,6 +202,7 @@
     width: 100%;
     height: auto;
     max-height: 300px;
+    min-width: 20px;
     object-fit: cover;
     border-radius: 10px;
   }
@@ -254,12 +259,12 @@
       transform: rotate(360deg);
     }
   }
-
-
+  
   .heroImage {
     display: none;
-    width: 100%;
-    height: auto;
+    width: auto;
+    margin-left: -400px;
+    height: 90vh;
   }
   
 

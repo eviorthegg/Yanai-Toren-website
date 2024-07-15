@@ -5,14 +5,11 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from './HomePage.module.css';
-
-import productionImage from './content/pictures/download.png';
-import commercialsImage from './content/pictures/download (1).png';
-import musicVideosImage from './content/pictures/download (2).png';
-import liveShowsImage from './content/pictures/download (3).png';
 import YouTubePlaceholder from './YouTubePlaceholder';
 
 function App() {
+  const srcs3 = 'https://d3csxsarc47q4y.cloudfront.net';
+  
   const settings = {
     dots: true,
     infinite: true,
@@ -60,10 +57,10 @@ function App() {
       </Helmet>
       <header className={styles.heroSection}>
         <video autoPlay loop muted className={styles.heroVideo}>
-          <source src='https://d3csxsarc47q4y.cloudfront.net/Untitled%20video%20-%20Made%20with%20Clipchamp.mp4' type="video/mp4" />
+          <source src={`${srcs3}/Untitled%20video%20-%20Made%20with%20Clipchamp.mp4`} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <img src={musicVideosImage} alt='Hero' className={styles.heroImage} />
+        <img src={`${srcs3}/pictures/download%20(2).png`} alt='Hero' className={styles.heroImage} />
         <div className={styles.videoOverlay}>
           <h1>Yanai Toren Productions</h1>
           <hr className={styles.heroLine} />
@@ -73,37 +70,53 @@ function App() {
           <div className={styles.arrowDown}></div>
         </div>
       </header>
-      <main>
+      <main className={styles.MainCointer}>
         <section className={styles.productionSection}>
           <h2>Our Production</h2>
           <Slider {...settings} className={styles.slider}>
-            <YouTubePlaceholder videoId="GBV1m1i6wWM" />
-            <YouTubePlaceholder videoId="sLPt028Iao8" />
-            <YouTubePlaceholder videoId="D0AN5mbIk_s" />
-            <YouTubePlaceholder videoId="R-W2pClUlzQ" />
-            <YouTubePlaceholder videoId="9aj713Txvpo" />
-            <YouTubePlaceholder videoId="M_UxnjtQtRc" />
-            <YouTubePlaceholder videoId="jNTd9yjpOxc" />
-            <YouTubePlaceholder videoId="QhvWoDbGG_Q" />
+            <div>
+              <YouTubePlaceholder videoId="GBV1m1i6wWM" />
+            </div>
+            <div>
+              <YouTubePlaceholder videoId="sLPt028Iao8" />
+            </div>
+            <div>
+              <YouTubePlaceholder videoId="D0AN5mbIk_s" />
+            </div>
+            <div>
+              <YouTubePlaceholder videoId="R-W2pClUlzQ" />
+            </div>
+            <div>
+              <YouTubePlaceholder videoId="9aj713Txvpo" />
+            </div>
+            <div>
+              <YouTubePlaceholder videoId="M_UxnjtQtRc" />
+            </div>
+            <div>
+              <YouTubePlaceholder videoId="jNTd9yjpOxc" />
+            </div>
+            <div>
+              <YouTubePlaceholder videoId="QhvWoDbGG_Q" />
+            </div>
           </Slider>
         </section>
         <section className={styles.servicesSection}>
           <h2>Our Services</h2>
           <Slider {...servicesSettings} className={styles.serviceCarousel}>
             <div className={styles.serviceContainer}>
-              <img src={productionImage} alt="Production" className={styles.serviceImage} />
+              <img src={`${srcs3}/pictures/download.png`} alt="Production" className={styles.serviceImage} />
               <div className={styles.serviceName}>PRODUCTION</div>
             </div>
             <div className={styles.serviceContainer}>
-              <img src={commercialsImage} alt="Commercials" className={styles.serviceImage} />
+              <img src={`${srcs3}/pictures/download%20(1).png`} alt="Commercials" className={styles.serviceImage} />
               <div className={styles.serviceName}>COMMERCIALS</div>
             </div>
             <div className={styles.serviceContainer}>
-              <img src={musicVideosImage} alt="Music Videos" className={styles.serviceImage} />
+              <img src={`${srcs3}/pictures/download%20(2).png`} alt="Music Videos" className={styles.serviceImage} />
               <div className={styles.serviceName}>MUSIC VIDEOS</div>
             </div>
             <div className={styles.serviceContainer}>
-              <img src={liveShowsImage} alt="Live Shows" className={styles.serviceImage} />
+              <img src={`${srcs3}/pictures/download%20(3).png`} alt="Live Shows" className={styles.serviceImage} />
               <div className={styles.serviceName}>LIVE SHOWS</div>
             </div>
           </Slider>
